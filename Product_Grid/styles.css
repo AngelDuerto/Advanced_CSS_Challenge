@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Catch 'Em All! title */
+h1{
+    color: rgb(194, 4, 4);
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 32px;
+    border-bottom: 2px solid #71a9ba;
+}
+
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px;
+    max-width: 95%;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+section{
+    padding: 15px;
+    border: 4px solid #86C5D8;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.9s ease;
+}
+
+section:hover {
+    transform: scale(1.03)
+}
+
+/* Product names */
+h3{
+    background-color: white;
+    padding: 10px;
+}
+
+.price{
+    background-color: white;
+    color: rgb(176, 158, 22);
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+.description{
+    text-align: left;
+    justify-content: center;
+    background-color: white;
+    padding: 10px;
+}
+
+
+
+img{
+    width: 150px;
+}
+
+/* Links styling*/
+a{
+    background-color: white;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* footer */
+.ft p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    color: black;
+    background-color: white;
+    border-top: 2px solid #71a9ba;
+    padding: 10px;
+}
+
+/* Responsiveness */
+@media (max-width: 890px){
+    .container_grid{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px){
+    .container_grid{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+    h1{
+        font-size: 40px;
+    }
+}
